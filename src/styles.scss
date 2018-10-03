@@ -1,0 +1,142 @@
+@import 'sanitize';
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background: #fff;;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: 'Bangers', cursive;
+}
+
+h1, h2, h3, p, ul {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.title {
+    transform: rotate(-6deg);
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 4.6rem;
+    margin-top: -4rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: .25em;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.copy {
+    margin-top: 3rem;
+}
+
+.full-image {
+    display: block;
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.content {
+    background: linear-gradient(to top, #5fc3e4, #2ebf91);
+    background-attachment: fixed;
+    border-radius: .5rem;
+    padding: 0 0 1rem;
+    color: #0c4b5a;
+    text-align: center;
+    box-shadow: .2rem .2rem 1rem rgba(22, 100, 119, 0.2), -.1rem -.1rem .5rem rgba(22, 100, 119,0.2);
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.wave {
+    position: fixed;
+    top: 85vh;
+    left: -40vw;
+    width: 190vw;
+    height: 190vw;
+    background: #fff;
+    animation: waves 5s infinite linear;
+    border-radius: 46%;
+    transform-origin: 50% 48%;
+    opacity: .6;
+}
+
+.wave:nth-child(2) {
+    animation-duration: 7s;
+}
+
+.wave:nth-child(3) {
+  margin-top: 10px;
+  animation-duration: 9s;
+}
+
+@keyframes waves {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.call-to-action {
+    position: fixed;
+    bottom: 1.5rem;
+    text-align: center;
+    right: 0;
+    width: 100%;
+
+}
+
+.button {
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 100em;
+    padding: .5rem 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+    letter-spacing: .085em;
+    text-decoration: none;
+    background-color: #e55d87;
+
+    &:hover {
+        background-color: #0c4b5a;
+    }
+}
+
+.button__icon {
+    margin-right: .5rem;
+    font-size: 1.25rem;
+}
